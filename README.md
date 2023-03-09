@@ -1,5 +1,6 @@
 # devoir2_maestracci_marcelin
-devoir 2 de PHQ404 sur les spins, par Nathan MAESTRACCI, Romain MARCELIN
+devoir 2 du cours PHQ404, sur les spins, par Nathan MAESTRACCI, Romain MARCELIN.
 
-##Rapport
-Le rapport est disponible dans le fichier rapport.ipynb
+## Rapport
+
+Le rapport est disponible en format Notebook Jupyter dans le fichier rapport.ipynb
