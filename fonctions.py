@@ -83,7 +83,7 @@ def energie(H):
     valeurs_propres = sorted(valeurs_propres)
 
     # On retire les doublons de valp
-    valeurs_propres = list(set(valeurs_propres))
+    valeurs_propres = list(set(np.round(valeurs_propres,decimals=5)))
 
     # Tant que l'on a moins de deux valeurs propres, on continue à chercher
     while len(valeurs_propres) < 2:
@@ -94,8 +94,8 @@ def energie(H):
         valeurs_propres = spla.eigsh(H, k=valeurs_a_calculer, which='SA', return_eigenvectors=False)
 
         #On les trie en ordre croissant
-        valeurs_propres = sorted(list(set(valeurs_propres)))
-
+        valeurs_propres = list(set(np.round(valeurs_propres,decimals=5)))
+    
     # On retourne les deux premières valeurs propres triées en ordre croissant
     return valeurs_propres[:2]
 
